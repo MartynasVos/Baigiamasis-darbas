@@ -1,0 +1,102 @@
+header, .donation-section, .mobile-nav ul {
+    background-color: #EFF7F2;
+}
+.donation-section {
+    margin-top: 4em;
+}
+.donation-section > .container {
+    justify-content: space-between;
+}
+.donation-text {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 26px;
+}
+.donation-text > div {
+    margin-right: 2em;
+}
+
+.donation-text .heading-2 {
+    margin: 32px 0;
+}
+.donation-text button {
+    background-color: var(--green-primary);
+    border: none;
+    max-width: 150px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 32PX;
+}
+
+.donate-image {
+    width: 100%;
+}
+.how-to-contribute-section > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+.how-to-contribute-section > .container > div {
+    max-width: 600px;
+}
+.how-to-contribute-section .heading-2 {
+    margin: 0 0 24px;
+}
+
+.how-to-contribute-buttons button {
+    background-color: #fff;
+    color: var(--secondary);
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    padding: 8px 24px;
+}
+
+.how-to-contribute-buttons button:hover {
+    cursor: pointer;
+}
+.how-to-contribute-buttons .active-button {
+    color: var(--primary);
+    border-bottom: 1px solid #70C174;
+}
+.donation-usage-section > .container {
+    justify-content: space-between;
+
+}
+.donation-usage-section > .container > div {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+@media all and (max-width: 1024px) {
+    .donation-section > .container {
+        justify-content: center;
+    }
+    .donate-image {
+        display: none;
+    }
+    .donation-text {
+        grid-template-columns: 100%;
+    }
+    .donation-text > div {
+        margin: 0;
+    }
+    .donation-text button {
+        font-size: 16px;
+    }
+    .donation-usage-section > .container, 
+    .how-to-contribute-section > .container {
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        gap: 50px;
+        margin-bottom: -4em;
+    }
+    .how-to-contribute-buttons {
+        justify-content: center;
+    }
+}

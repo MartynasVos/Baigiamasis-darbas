@@ -1,0 +1,143 @@
+header, .contact-us-section, .mobile-nav ul {
+    background-color: #EBF0F9;
+}
+
+
+/* CONTACT US */
+.contact-us-section {
+    margin-top: 4em;
+}
+.contact-us-text {
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 24px;
+    margin-right: 100px;
+}
+
+.contact-details {
+    color: var(--primary);
+}
+
+.contacts-header {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contacts-link {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.contacts-link:not(:last-child) {
+    padding-right: 23px;
+}
+
+.office-heading {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.office-paragraph {
+    color: var(--secondary);
+}
+
+.socials-link {
+    color: var(--primary);
+    font-size: 20px;
+}
+.socials-link:not(:last-child) {
+    padding-right: 20px;
+}
+
+/* CONTACT FORM */
+
+.contact-form-section {
+    margin-bottom: 7em;
+}
+
+.contact-form-section > .container {
+    justify-content: center;
+}
+
+.contact-form {
+    color: var(--primary);
+    width: 100%;
+    max-width: 48em;
+}
+
+.contact-form label {
+    opacity: 60%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.contact-form > .flex-container > div:first-child {
+    margin-right: 2em;
+}
+
+.contact-form > .flex-container > div {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.contact-form input, .contact-form input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+}
+
+#contact-message {
+   padding: 20px;
+   max-width: 728px;
+   width: 100%;
+   height: 100%;
+   max-height: 9.75em;
+   margin-bottom: 2em;
+   resize: none;
+   border: 1px solid grey;
+}
+.button-container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.contact-form button {
+    background-color: var(--green-primary);
+    border: none;
+    max-width: 150px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 3px; 
+}
+iframe {
+    width: 100%;
+    margin-bottom: -4px;
+}
+@media all and (max-width: 1024px) {
+    .contact-us-text {
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+    .contact-us-section > .container {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-form input,.contact-form label,#contact-message,.contact-form button {
+        font-size: 15px;
+    }
+    #contact-message {
+        
+        max-width: 630px;
+    }
+}
+@media all and (max-width: 500px) {
+    #contact-message {
+        max-width: 275px;
+    }
+}
